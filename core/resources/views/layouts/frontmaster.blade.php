@@ -312,6 +312,20 @@
 <!-- Main JS -->
 <script type="text/javascript" src="{{ asset('assets/frontend/js/main.js') }}"></script>
 
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyANpn9emI7Vsl9f3gqyKskuVCNCFmyJlTg",
+    authDomain: "ezrewards-5443.firebaseapp.com",
+    databaseURL: "https://ezrewards-5443.firebaseio.com",
+    projectId: "ezrewards-5443",
+    storageBucket: "ezrewards-5443.appspot.com",
+    messagingSenderId: "199030007233"
+  };
+  firebase.initializeApp(config);
+</script>
+
 @if(Session::has('msg'))
     <script>
         $(document).ready(function(){
